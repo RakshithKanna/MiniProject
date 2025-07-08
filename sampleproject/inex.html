@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Billing Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Billing System</h2>
+  <form id="billForm">
+    <input id="product" placeholder="Product Name" required>
+    <input id="qty" type="number" placeholder="Quantity" required>
+    <input id="price" type="number" placeholder="Price" required>
+    <button type="submit">Add</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th><th>Qty</th><th>Price</th><th>Total</th><th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="billTable"></tbody>
+  </table>
+
+  <h3>Total Bill: ₹<span id="grandTotal">0</span></h3>
+
+  <script src="script.js"></script>
+</body>
+</html>
